@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- define your colors so that they can be referenced
+    anywhere else you might need them -->
+    <color name="primary">#1eabf2</color> →6
+    <color name="primary_dark">#178acf</color>
+    <color name="accent">#ffb936</color>
+    <color name="window_background">#c1dae6</color>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!-- your app's branding color (for the app bar) -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!-- darker variant of colorPrimary (for status bar, contextual
+        app bars) -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+        <!-- the background color of your windows -->
+        <item name="android:windowBackground">
+            @color/window_background
+        </item>
+        <!-- the background of the device's navigation bar (visible if the
+        device doesn't have physical navigation buttons) -->
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <!-- your primary and inverse text colors used in things like
+        the actionbar. These are commented out because we are
+        happy with the default values. Uncomment and set your own
+        colors if desired. -->
+        <!--<item name="android:textColorPrimary">-->
+        <!--@color/text_color_primary-->
+        <!--</item>-->
+        <!--<item name="android:textColorPrimaryInverse">-->
+        <!--@color/text_color_primary_inverse-->
+        <!--</item>-->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="CustomAppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+
+        <!-- your app's branding color (for the app bar) -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!-- darker variant of colorPrimary (for status bar, contextual
+        app bars) -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+        <!-- the background color of your windows -->
+        <item name="android:windowBackground">
+            @color/window_background
+        </item>
+        <!-- the background of the device's navigation bar (visible if the
+        device doesn't have physical navigation buttons) -->
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <!-- your primary and inverse text colors used in things like
+        the actionbar. These are commented out because we are
+        happy with the default values. Uncomment and set your own
+        colors if desired. -->
+        <!--<item name="android:textColorPrimary">-->
+        <!--@color/text_color_primary-->
+        <!--</item>-->
+        <!--<item name="android:textColorPrimaryInverse">-->
+        <!--@color/text_color_primary_inverse-->
+        <!--</item>-->
+    </style>
+
+    <!-- A variation of the AppTheme, but with a transparent (clear)
+    ActionBar. Also has a translucent (grey) status and navigation
+    bar. -->
+<style name="AppTheme.TransparentActionBar" parent="AppTheme"> →4
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBarOverlay">true</item> →6
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:actionBarStyle">@style/TransparentActionBar</item> → 8
+</style>
+    <!-- The TransparentActionBar style used by
+    AppTheme.TransparentActionBar -->
+<style name="TransparentActionBar" parent="android:Theme.Material">
+        <item name="android:background">@android:color/transparent</item> → 14
+</style>
+
+</resources>
